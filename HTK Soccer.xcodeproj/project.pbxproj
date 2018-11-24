@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		C27A661721A96B6900169FBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C27A661621A96B6900169FBE /* AppDelegate.m */; };
-		C27A661A21A96B6900169FBE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27A661921A96B6900169FBE /* ViewController.m */; };
+		C27A661A21A96B6900169FBE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27A661921A96B6900169FBE /* MainViewController.m */; };
 		C27A661D21A96B6900169FBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27A661B21A96B6900169FBE /* Main.storyboard */; };
 		C27A661F21A96B6B00169FBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C27A661E21A96B6B00169FBE /* Assets.xcassets */; };
 		C27A662221A96B6B00169FBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27A662021A96B6B00169FBE /* LaunchScreen.storyboard */; };
 		C27A662521A96B6B00169FBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C27A662421A96B6B00169FBE /* main.m */; };
+		C27A663121A96DED00169FBE /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27A663021A96DEC00169FBE /* SWRevealViewController.m */; };
+		C27A663521A96F0800169FBE /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27A663421A96F0800169FBE /* MenuTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C27A661221A96B6900169FBE /* HTK Soccer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HTK Soccer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27A661521A96B6900169FBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C27A661621A96B6900169FBE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C27A661821A96B6900169FBE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C27A661921A96B6900169FBE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C27A661821A96B6900169FBE /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C27A661921A96B6900169FBE /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		C27A661C21A96B6900169FBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C27A661E21A96B6B00169FBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C27A662121A96B6B00169FBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C27A662321A96B6B00169FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C27A662421A96B6B00169FBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C27A662F21A96DEC00169FBE /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		C27A663021A96DEC00169FBE /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		C27A663321A96F0800169FBE /* MenuTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
+		C27A663421A96F0800169FBE /* MenuTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +64,61 @@
 		C27A661421A96B6900169FBE /* HTK Soccer */ = {
 			isa = PBXGroup;
 			children = (
+				C27A663221A96ECF00169FBE /* Controller */,
+				C27A662D21A96DD100169FBE /* Library */,
+				C27A662C21A96BB000169FBE /* View */,
+				C27A661E21A96B6B00169FBE /* Assets.xcassets */,
+				C27A662B21A96B8900169FBE /* Support */,
+			);
+			path = "HTK Soccer";
+			sourceTree = "<group>";
+		};
+		C27A662B21A96B8900169FBE /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				C27A661521A96B6900169FBE /* AppDelegate.h */,
 				C27A661621A96B6900169FBE /* AppDelegate.m */,
-				C27A661821A96B6900169FBE /* ViewController.h */,
-				C27A661921A96B6900169FBE /* ViewController.m */,
-				C27A661B21A96B6900169FBE /* Main.storyboard */,
-				C27A661E21A96B6B00169FBE /* Assets.xcassets */,
 				C27A662021A96B6B00169FBE /* LaunchScreen.storyboard */,
 				C27A662321A96B6B00169FBE /* Info.plist */,
 				C27A662421A96B6B00169FBE /* main.m */,
 			);
-			path = "HTK Soccer";
+			path = Support;
+			sourceTree = "<group>";
+		};
+		C27A662C21A96BB000169FBE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C27A661B21A96B6900169FBE /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C27A662D21A96DD100169FBE /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C27A662E21A96DEC00169FBE /* SWRevealViewController */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		C27A662E21A96DEC00169FBE /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C27A662F21A96DEC00169FBE /* SWRevealViewController.h */,
+				C27A663021A96DEC00169FBE /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		C27A663221A96ECF00169FBE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C27A661821A96B6900169FBE /* MainViewController.h */,
+				C27A661921A96B6900169FBE /* MainViewController.m */,
+				C27A663321A96F0800169FBE /* MenuTableViewController.h */,
+				C27A663421A96F0800169FBE /* MenuTableViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +191,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C27A661A21A96B6900169FBE /* ViewController.m in Sources */,
+				C27A661A21A96B6900169FBE /* MainViewController.m in Sources */,
 				C27A662521A96B6B00169FBE /* main.m in Sources */,
 				C27A661721A96B6900169FBE /* AppDelegate.m in Sources */,
+				C27A663121A96DED00169FBE /* SWRevealViewController.m in Sources */,
+				C27A663521A96F0800169FBE /* MenuTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +337,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NYH28ZBEQ4;
-				INFOPLIST_FILE = "HTK Soccer/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/HTK Soccer/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NYH28ZBEQ4;
-				INFOPLIST_FILE = "HTK Soccer/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/HTK Soccer/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
